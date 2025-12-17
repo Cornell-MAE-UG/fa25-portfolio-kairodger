@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <Your Name> - Curriculum Vitae
+title: Kai Rodger - Curriculum Vitae
 permalink: /cv/
 ---
 ## Curriculum Vitae

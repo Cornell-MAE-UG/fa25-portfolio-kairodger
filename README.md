@@ -138,7 +138,7 @@ bundle install
 
 ### Running the Local Portfolio Server
 Then, to run the server you run the `jekyll serve` command:
-```bash
+```zsh
 bundle exec jekyll serve
 ```
 
