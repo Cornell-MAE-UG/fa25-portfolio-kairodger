@@ -1,25 +1,29 @@
 ---
 layout: project
-title: 4272 Final
-description: Advanced CAD Project
-technologies: [Autodesk Fusion]
+title: MAE 4272 Blade Design Project
+description: Design, CAD, and Testing
+technologies: [Autodesk Fusion 360, MATLAB, Microsoft Office]
 image: /assets/images/radio-machine-cad.jpg
 ---
 
-For a class, we were asked to CAD a complex object. This design was...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec accumsan leo. Pellentesque ornare orci enim, vitae vestibulum nibh rutrum in. Donec pharetra risus nec ipsum fringilla, et mattis tortor auctor. Duis tortor ante, posuere ut odio a, scelerisque interdum purus. Aenean faucibus luctus est, sed bibendum tellus. 
+### Project Overview
 
-Nulla et magna urna. Morbi a ipsum sollicitudin, rhoncus risus volutpat, ultricies nunc. Quisque mollis finibus ante id imperdiet. Quisque vehicula elit sit amet felis facilisis fermentum.
+For this project, our objective was to design and test a wind turbine blade optimized for power extraction while remaining within structural and experimental constraints. The blade was designed to operate in Cornell's Big Blue Wind Tunnel, with constraints on blade length (<6 inches), rotational speed (<2000 RPM), chord length (<2 inches), and wind tunnel flow velocity. We have designed a blade that is expected to be optimal at a wind speed of 7.4 Hz (4.8 m/s). We tested whether the blade holds up structurally at this speed and whether the power output matches our optimization.
 
-![Shaded rendering of earlier version]({{ "/assets/images/radio-machine.jpg" | relative_url }}){: .inline-image-r style="width: 200px"}
+### Design Process
 
-Nulla et magna urna. Morbi a ipsum sollicitudin, rhoncus risus volutpat, ultricies nunc. Quisque mollis finibus ante id imperdiet. Quisque vehicula elit sit amet felis facilisis fermentum.
+For our design process, we started off by using a Weibull distribution to model expected operating conditions and identify an optimal wind speed, which was calculated to be approximately 4.8 m/s. Using this condition, we selected the NACA 4412 airfoil based on good lift-to-drag characteristics at a low Reynolds number that we calculated. From this data, we determined an optimal angle of attack, from which we derived the pitch distribution. We then iterated chord taper ratios under geometric constraints to maximize our predicted power output, which came out to be 0.08 W with a taper ratio of 0.142. Lastly, we ran structural calculations, which showed that there was excessive bending stress at the tip of the initial blade length, so we shortened it from 6 to 4.5 in to bring maximum stress below the material's flexural strength. Using all of these parameters, we made a CAD of the blade.
 
-Aenean tincidunt aliquam arcu, in euismod dui dapibus eu. In placerat, mi et ultrices consequat, quam ligula cursus mauris, in semper neque nibh at est. Maecenas hendrerit dignissim porta. Phasellus nec fringilla dolor. Etiam efficitur nisi sit amet velit pharetra feugiat. Etiam ultrices turpis at leo semper, eleifend scelerisque neque malesuada. Aliquam molestie congue rhoncus. Donec blandit neque dolor, nec tristique mi pretium ac. Mauris tincidunt ullamcorper magna, nec pellentesque mi sagittis quis.
+![Twist distribution]({{ "/assets/images/radio-machine.jpg" | relative_url }}){: .inline-image-r style="width: 200px"}
+![Bending stress]({{ "/assets/images/radio-machine.jpg" | relative_url }}){: .inline-image-r style="width: 200px"}
 
-I was inspired by this old radio when I made this rendering:
+### Testing and Results
 
-![Photo of old radio]({{ "/assets/images/old-radio.jpg" | relative_url }}){: .inline-image-l}
+To test our blade design, the blades were resin printed, assembled, and put into the wind tunnel at multiple flow speeds while gradually increasing the brake torque. From this, we recorded the RPM and power output and generated power curves. The blades reached a maximum power output of approximately 0.17 W at a flow speed of 9 Hz, which exceeded/outperformed our initial calculations of both predicted power output and optimal wind speed. This is most likely because our initial RPM wasn’t chosen at a peak since our initial power curve calculations showed us a graph that increased past 2000 RPM, which exceeds structural limitations. When testing, we also did not see any excess vibrations or structural issues.
 
-Aenean tincidunt aliquam arcu, in euismod dui dapibus eu. In placerat, mi et ultrices consequat, quam ligula cursus mauris, in semper neque nibh at est. Maecenas hendrerit dignissim porta. Phasellus nec fringilla dolor. Etiam efficitur nisi sit amet velit pharetra feugiat. Etiam ultrices turpis at leo semper, eleifend scelerisque neque malesuada. Aliquam molestie congue rhoncus. Donec blandit neque dolor, nec tristique mi pretium ac. Mauris tincidunt ullamcorper magna, nec pellentesque mi sagittis quis.
+![Power Curve]({{ "/assets/images/radio-machine.jpg" | relative_url }}){: .inline-image-r style="width: 200px"}
+![Testing Action Shot]({{ "/assets/images/radio-machine.jpg" | relative_url }}){: .inline-image-r style="width: 200px"}
 
-Aenean tincidunt aliquam arcu, in euismod dui dapibus eu. In placerat, mi et ultrices consequat, quam ligula cursus mauris, in semper neque nibh at est. Maecenas hendrerit dignissim porta. Phasellus nec fringilla dolor. Etiam efficitur nisi sit amet velit pharetra feugiat. Etiam ultrices turpis at leo semper, eleifend scelerisque neque malesuada. Aliquam molestie congue rhoncus. Donec blandit neque dolor, nec tristique mi pretium ac. Mauris tincidunt ullamcorper magna, nec pellentesque mi sagittis quis.
+### My Contribution
+
+For this project, I contributed to most aspects of the design, notably the initial calculations for optimal wind speed, power output, maximum stress, and pitch distribution. I also helped out with the CAD of the design and data analysis. The team dynamic was very even, so everyone contributed equal amounts.
