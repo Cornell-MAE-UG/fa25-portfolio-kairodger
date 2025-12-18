@@ -52,9 +52,8 @@ footer {
   font-size: 0.9em;
 }
 
-/* ONE container rule (wider so two images can sit side-by-side) */
 .container {
-  max-width: 900px;
+  max-width: 600px;
 }
 
 .project-item img {
@@ -198,42 +197,22 @@ footer {
   transform: translateX(-4px);
 }
 
-/* --- Side-by-side images with different sizes --- */
 .image-row {
   display: flex;
-  gap: 32px;
-  align-items: center;
   justify-content: center;
-  margin: 40px 0;
-  flex-wrap: nowrap;
+  gap: 24px;
+  margin: 32px 0;
+  flex-wrap: nowrap; /* IMPORTANT */
 }
 
-/* left image (smaller, e.g., plot) */
-.image-row .img-small {
-  flex: 1;
-  max-width: 420px;
-  width: 100%;
+.image-row img {
+  width: 40%;
+  max-width: 320px;
   height: auto;
   object-fit: contain;
 }
 
-/* right image (larger, e.g., photo) */
-.image-row .img-large {
-  flex: 1.6;
-  max-width: 650px;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Mobile: stack them */
-@media (max-width: 768px) {
-  .image-row {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .image-row img {
-    max-width: 100%;
-  }
+/* Allow project pages to use more horizontal space */
+.container {
+  max-width: 900px;
 }
