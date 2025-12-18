@@ -216,4 +216,8 @@ footer {
   height: auto !important;
   object-fit: contain;
 }
+/* Allow project pages to use more horizontal space */
+.container {
+  max-width: 900px;
+}
 
