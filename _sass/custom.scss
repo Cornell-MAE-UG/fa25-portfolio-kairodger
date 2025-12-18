@@ -200,23 +200,20 @@ footer {
   transform: translateX(-4px);
 }
 
-/* --- Portfolio project image rows (prevents text disruption + normalizes size) --- */
+/* --- FORCE project image normalization --- */
 .image-row {
   display: flex;
-  gap: 24px;
   justify-content: center;
-  align-items: center;
+  gap: 24px;
   margin: 32px 0;
   flex-wrap: wrap;
-  clear: both; // prevents interaction with floated .inline-image-* above
 }
 
 .image-row img {
-  width: 100%;
-  max-width: 360px;  // hard cap so images never explode
-  height: auto;
+  width: 40vw !important;     /* % of screen width */
+  max-width: 320px !important;
+  min-width: 200px;
+  height: auto !important;
   object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
