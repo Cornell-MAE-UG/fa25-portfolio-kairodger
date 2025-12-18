@@ -3,7 +3,7 @@ layout: project
 title: MAE 4272 Blade Design Project
 description: Design, CAD, and Testing
 technologies: [Autodesk Fusion 360, MATLAB, Microsoft Office]
-image: /assets/images/finalCAD.jpg
+image: assets/images/bladeCAD.jpg
 ---
 
 ### Project Overview
