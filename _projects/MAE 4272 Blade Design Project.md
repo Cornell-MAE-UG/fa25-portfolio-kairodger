@@ -31,12 +31,7 @@ To test our blade design, the blades were resin printed, assembled, and put into
   <img src="{{ '/assets/images/PowerCurves.jpg' | relative_url }}" alt="Power curves">
 </div>
 
-<iframe
-  src="{{ 'assets/images/PowerCurves.jpg' | relative_url }}"
-  width="100%"
-  height="100%"
-  style="border: none;">
-</iframe>
+<img src="{{ '/assets/images/PowerCurves.jpg' | relative_url }}" width="50%" height="50%">
 
 
 ### My Contribution
