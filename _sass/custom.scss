@@ -202,12 +202,14 @@ footer {
   justify-content: center;
   gap: 24px;
   margin: 32px 0;
-  flex-wrap: nowrap; /* IMPORTANT */
+  flex-wrap: wrap;        /* lets it stack on small screens */
+  align-items: center;
 }
 
 .image-row img {
-  width: 40%;
-  max-width: 320px;
+  flex: 1 1 320px;        /* responsive */
+  max-width: 420px;       /* cap size so they aren't massive */
+  width: 100%;
   height: auto;
   object-fit: contain;
 }
@@ -216,3 +218,11 @@ footer {
 .container {
   max-width: 900px;
 }
+
+/* Make ALL images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
