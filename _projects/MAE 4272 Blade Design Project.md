@@ -3,7 +3,7 @@ layout: project
 title: MAE 4272 Blade Design Project
 description: Design, CAD, and Testing
 technologies: [Autodesk Fusion 360, MATLAB, Microsoft Office]
-image: assets/images/bladeCAD.jpg
+image: assets/images/TestingAction.jpg
 ---
 
 ### Project Overview
@@ -29,7 +29,6 @@ To test our blade design, the blades were resin printed, assembled, and put into
 
 <div class="image-row">
   <img src="{{ '/assets/images/PowerCurves.jpg' | relative_url }}" alt="Power curves">
-  <img src="{{ '/assets/images/TestingAction.jpg' | relative_url }}" alt="Wind tunnel testing">
 </div>
 
 
