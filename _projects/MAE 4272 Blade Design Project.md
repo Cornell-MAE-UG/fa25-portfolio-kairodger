@@ -11,7 +11,7 @@ image: assets/images/bladeCAD.jpg
 For this project, our objective was to design and test a wind turbine blade optimized for power extraction while remaining within structural and experimental constraints. The blade was designed to operate in Cornell's Big Blue Wind Tunnel, with constraints on blade length (<6 inches), rotational speed (<2000 RPM), chord length (<2 inches), and wind tunnel flow velocity. We have designed a blade that is expected to be optimal at a wind speed of 7.4 Hz (4.8 m/s). We tested whether the blade holds up structurally at this speed and whether the power output matches our optimization.
 
 <div class="image-row">
-  <img src="{{ '/assets/images/finalCAD.jpg' | relative_url }}" alt="Final CAD">
+  <img src="{{ '/assets/images/bladeCAD.jpg' | relative_url }}" alt="Final CAD">
 </div>
 
 ### Design Process
