@@ -14,6 +14,14 @@ For this project, our objective was to design and test a wind turbine blade opti
   <img src="{{ '/assets/images/bladeCAD.jpg' | relative_url }}" alt="Final CAD">
 </div>
 
+<iframe
+  src="{{ '/assets/images/bladeCAD.pdf' | relative_url }}"
+  width="300px"
+  height="900px"
+  style="border: none;">
+</iframe>
+
+
 ### Design Process
 
 For our design process, we started off by using a Weibull distribution to model expected operating conditions and identify an optimal wind speed, which was calculated to be approximately 4.8 m/s. Using this condition, we selected the NACA 4412 airfoil based on good lift-to-drag characteristics at a low Reynolds number that we calculated. From this data, we determined an optimal angle of attack, from which we derived the pitch distribution. We then iterated chord taper ratios under geometric constraints to maximize our predicted power output, which came out to be 0.08 W with a taper ratio of 0.142. Lastly, we ran structural calculations, which showed that there was excessive bending stress at the tip of the initial blade length, so we shortened it from 6 to 4.5 in to bring maximum stress below the material's flexural strength. Using all of these parameters, we made a CAD of the blade.
