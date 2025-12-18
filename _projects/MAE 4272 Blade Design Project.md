@@ -27,12 +27,9 @@ For our design process, we started off by using a Weibull distribution to model 
 
 To test our blade design, the blades were resin printed, assembled, and put into the wind tunnel at multiple flow speeds while gradually increasing the brake torque. From this, we recorded the RPM and power output and generated power curves. The blades reached a maximum power output of approximately 0.17 W at a flow speed of 9 Hz, which exceeded/outperformed our initial calculations of both predicted power output and optimal wind speed. This is most likely because our initial RPM wasn’t chosen at a peak since our initial power curve calculations showed us a graph that increased past 2000 RPM, which exceeds structural limitations. When testing, we also did not see any excess vibrations or structural issues.
 
-<div class="image-row">
-  <img src="{{ '/assets/images/PowerCurves.jpg' | relative_url }}" alt="Power curves">
+<div style="text-align: center;">
+<img src="{{ '/assets/images/PowerCurves.jpg' | relative_url }}" width="75%" height="75%">
 </div>
-
-<img src="{{ '/assets/images/PowerCurves.jpg' | relative_url }}" width="50%" height="50%">
-
 
 ### My Contribution
 
