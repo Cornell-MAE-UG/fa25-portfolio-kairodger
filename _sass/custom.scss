@@ -200,22 +200,21 @@ footer {
   transform: translateX(-4px);
 }
 
-/* --- FORCE project image normalization --- */
 .image-row {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin: 32px 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* IMPORTANT */
 }
 
 .image-row img {
-  width: 40vw !important;     /* % of screen width */
-  max-width: 320px !important;
-  min-width: 200px;
-  height: auto !important;
+  width: 40%;
+  max-width: 320px;
+  height: auto;
   object-fit: contain;
 }
+
 /* Allow project pages to use more horizontal space */
 .container {
   max-width: 900px;
