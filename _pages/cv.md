@@ -5,11 +5,14 @@ permalink: /cv/
 ---
 ## Curriculum Vitae
 
-[Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
+[Download my CV]({{ "/assets/Kai Rodger Resume.pdf" | relative_url }}) in PDF format.
 
 
-**Email:** [kr47@cornell.edu](mailto:kr47@cornell.edu) | | | **Phone:** +123 456 7890
+**Email:** [kr47@cornell.edu](mailto:kr47@cornell.edu) | | | **Phone:** (+1)516-993-1297
 
+
+
+<!--
 ---
 
 #### Objective
@@ -72,3 +75,4 @@ Aspiring engineering student with a strong foundation in.... Passionate about ..
 Available upon request.
 
 ---
+-->
