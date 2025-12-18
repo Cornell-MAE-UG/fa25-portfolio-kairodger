@@ -207,17 +207,13 @@ footer {
 }
 
 .image-row img {
-  flex: 1 1 320px;        /* responsive */
-  max-width: 420px;       /* cap size so they aren't massive */
+  flex: 0 1 auto;
   width: 100%;
+  max-width: 260px;   /* <-- smaller cap */
   height: auto;
   object-fit: contain;
 }
 
-/* Allow project pages to use more horizontal space */
-.container {
-  max-width: 900px;
-}
 
 /* Make ALL images responsive by default */
 img {
