@@ -14,15 +14,19 @@ For this project, our objective was to design and test a wind turbine blade opti
 
 For our design process, we started off by using a Weibull distribution to model expected operating conditions and identify an optimal wind speed, which was calculated to be approximately 4.8 m/s. Using this condition, we selected the NACA 4412 airfoil based on good lift-to-drag characteristics at a low Reynolds number that we calculated. From this data, we determined an optimal angle of attack, from which we derived the pitch distribution. We then iterated chord taper ratios under geometric constraints to maximize our predicted power output, which came out to be 0.08 W with a taper ratio of 0.142. Lastly, we ran structural calculations, which showed that there was excessive bending stress at the tip of the initial blade length, so we shortened it from 6 to 4.5 in to bring maximum stress below the material's flexural strength. Using all of these parameters, we made a CAD of the blade.
 
-![Twist distribution]({{ "/assets/images/TwistDist.jpg" | relative_url }}){: .inline-image-r style="width: 200px"}
-![Bending stress]({{ "/assets/images/BendingStress.jpg" | relative_url }}){: .inline-image-r style="width: 200px"}
+<div class="image-row">
+  <img src="{{ '/assets/images/TwistDist.jpg' | relative_url }}" alt="Twist distribution">
+  <img src="{{ '/assets/images/BendingStress.jpg' | relative_url }}" alt="Bending stress">
+</div>
 
 ### Testing and Results
 
 To test our blade design, the blades were resin printed, assembled, and put into the wind tunnel at multiple flow speeds while gradually increasing the brake torque. From this, we recorded the RPM and power output and generated power curves. The blades reached a maximum power output of approximately 0.17 W at a flow speed of 9 Hz, which exceeded/outperformed our initial calculations of both predicted power output and optimal wind speed. This is most likely because our initial RPM wasn’t chosen at a peak since our initial power curve calculations showed us a graph that increased past 2000 RPM, which exceeds structural limitations. When testing, we also did not see any excess vibrations or structural issues.
 
-![Power Curve]({{ "/assets/images/PowerCurves.jpg" | relative_url }}){: .inline-image-r style="width: 200px"}
-![Testing Action Shot]({{ "/assets/images/TestingAction.jpg" | relative_url }}){: .inline-image-r style="width: 200px"}
+<div class="image-row">
+  <img src="{{ '/assets/images/PowerCurves.jpg' | relative_url }}" alt="Power curves">
+  <img src="{{ '/assets/images/TestingAction.jpg' | relative_url }}" alt="Wind tunnel testing">
+</div>
 
 ### My Contribution
 
