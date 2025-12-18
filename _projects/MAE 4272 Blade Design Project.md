@@ -32,6 +32,7 @@ To test our blade design, the blades were resin printed, assembled, and put into
   width="75%" 
   height="75%"
   style="display: block; margin: 0 auto;"
+>
 
 ### My Contribution
 
