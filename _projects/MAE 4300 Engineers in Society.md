@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Spaceship Design
+title: MAE 4300 Engineers in Society
 description: Just a spaceship that I designed
 technologies: [SolidWorks, Machining]
 image: /assets/images/spaceship-design.jpg
